@@ -8,6 +8,8 @@
   --hero-text-color: #ffffff;
   --transperent-footer-color: rgba(255, 255, 255, 0.6);
   --address-footer-color: #ffffff;
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
 
   /* fill color */
   --background-first-color: #2f303a;
@@ -61,7 +63,7 @@ body {
 }
 
 .header-logo-alt {
-  color: #000000; /*використовується один раз - нема сенсу вносити у змінні*/
+  color: var(--black-text-color);
 }
 
 .header-link-main {
@@ -132,7 +134,6 @@ body {
 /*----COMMON SECTIONS HEADER----*/
 
 .section-header {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -144,7 +145,6 @@ body {
 /*----ADVANTAGES----*/
 
 .advantages-header {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -201,7 +201,7 @@ body {
 }
 
 .footer-logo-alt {
-  color: #ffffff; /*використовується один раз - нема сенсу вносити у змінні*/
+  color: var(--white-text-color);
 }
 
 .footer-address {
@@ -222,7 +222,7 @@ body {
 
 .footer-list-item:hover,
 .footer-list-item:focus {
-  color: var(--accent-text-color);
+  color: var(--white-text-color);
 }
 
 /*----PORTFOLIO----*/
@@ -249,7 +249,6 @@ body {
 }
 
 .portfolio-list-header {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
